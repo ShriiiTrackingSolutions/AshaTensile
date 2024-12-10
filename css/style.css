@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2"),
+    url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Italic.woff2") format("woff2"),
+    url("../fonts/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-MediumItalic.woff2") format("woff2"),
+    url("../fonts/OpenSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --Black: #333333;
+  --textGrey: #707070;
+  --primary: #005BAA;
+  --secondary: #408BD1;
+  --HoverBlue: #0A3A89;
+  --BG-Light: #7EAED4;
+  --AccentColour:#E69515;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  line-height: 1.75;
+  font-family: "Open Sans", Helvetica, "Trebuchet MS", Arial, Verdana, Tahoma,
+    "DejaVu Sans", "Liberation sans", "Bitstream Vera Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+.container-fluid {
+  max-width: 1340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-fluid.custom {
+  max-width: 1200px;
+}
+
+.display-3 {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 56px;
+  margin-bottom: 28px;
+}
+
+.secH {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+.therdH {
+  font-size: 40px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.fourthH {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.bodySmall {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22;
+}
+
+/* header css start */
+
+/* Initial header styling */
+#main-header {
+  transition: all 0.5s ease;
+  z-index: 1055;
+}
+
+/* Hidden when out of view */
+.sticky-header {
+  position: fixed;
+  top: -112.48px; /* Hidden initially */
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: top 0.5s ease; /* Slide down animation */
+  animation: slideDown 0.5s ease-in-out both;
+}
+@keyframes slideDown {
+  0% {
+    position: fixed;
+    top: -112.48px;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
+.headerAnimate {
+  animation: slideUp 0.5s ease-in-out both;
+}
+
+@keyframes slideUp {
+  0% {
+    top: 50.48px;
+    position: relative;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.sticky-header.visible {
+  top: 0; /* Slide into view */
+}
+
+.navbar-brand {
+  margin-right: 45px;
+  width: 13rem;
+}
+
+.dropdown-menu li {
+  width: 260px;
+  padding: 0 20px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.5em;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  content: "\f107";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  border: none;
+}
+
+.navbar {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  max-width: 100%;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  padding: 20px 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+  padding: 15px 20px;
+  padding-right: 28px;
+  border-radius: 0;
+  border-bottom: none;
+  text-wrap: wrap;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 14px;
+  color: var(--Black);
+}
+.nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 18px 0px !important;
+  font-weight: 500;
+  line-height: 30px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .show > .nav-link:hover {
+  color: var(--secondary);
+}
+
+.bg-light {
+  background-color: var(--Black) !important;
+}
+
+.navbar-nav {
+  gap: 40px;
+}
+.nav-link:focus, .nav-link:hover {
+  color: var(--secondary);
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--secondary);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+
+
+.dropdown-mega .dropdown-menu[data-bs-popper] {
+  margin-top: -2px !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-mega  .dropdown-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar>.container-fluid{
+  position: relative;
+}
+
+.megaHeding{
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.4;
+    color: var(--Black);
+}
+
+.megaDropdown{
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.13) !important;
+}
+
+
+.list-group .list-group-item{
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  padding-left: 0;
+  padding-right: 28px;
+  border-bottom: 1px solid var(--lightGrey);
+  text-wrap: wrap;
+  font-weight: 600;
+}
+
+
+.list-group .list-group-item:last-child{
+  border: none;
+  padding-bottom: 0;
+}
+
+
+/* header css end */
+
+/* banner css start */
+
+/* banner css end */
+
+.defaultPadding {
+  padding: 50px 0;
+}
