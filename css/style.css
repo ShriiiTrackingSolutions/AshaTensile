@@ -64,11 +64,11 @@
 :root {
   --Black: #333333;
   --textGrey: #707070;
-  --primary: #005BAA;
-  --secondary: #408BD1;
-  --HoverBlue: #0A3A89;
-  --BG-Light: #7EAED4;
-  --AccentColour:#E69515;
+  --primary: #005baa;
+  --secondary: #408bd1;
+  --HoverBlue: #0a3a89;
+  --BG-Light: #7eaed4;
+  --AccentColour: #e69515;
 }
 
 * {
@@ -92,8 +92,8 @@ a {
 img {
   width: 100%;
 }
-.container-fluid {
-  max-width: 1340px;
+.container-fluid.header {
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,6 +119,7 @@ img {
   font-size: 40px;
   color: var(--primary);
   font-weight: bold;
+  margin-bottom: 34px;
 }
 
 .fourthH {
@@ -129,7 +130,7 @@ img {
 .bodySmall {
   font-size: 14px;
   font-weight: 400;
-  line-height: 22;
+  line-height: 26px;
 }
 
 /* header css start */
@@ -138,6 +139,10 @@ img {
 #main-header {
   transition: all 0.5s ease;
   z-index: 1055;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 /* Hidden when out of view */
@@ -166,7 +171,7 @@ img {
 @keyframes slideUp {
   0% {
     top: 50.48px;
-    position: relative;
+    position: absolute;
   }
   100% {
     top: 0px;
@@ -178,7 +183,7 @@ img {
 
 .navbar-brand {
   margin-right: 45px;
-  width: 13rem;
+  width: 184px;
 }
 
 .dropdown-menu li {
@@ -198,8 +203,8 @@ img {
 }
 
 .navbar {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   max-width: 100%;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -240,18 +245,19 @@ img {
 
 .navbar-nav .nav-link.active:hover,
 .navbar-nav .show > .nav-link:hover {
-  color: var(--secondary);
+  color: #000000;
 }
 
 .bg-light {
-  background-color: var(--Black) !important;
+  background-color: #0000005d !important;
 }
 
 .navbar-nav {
-  gap: 40px;
+  gap: 20px;
 }
-.nav-link:focus, .nav-link:hover {
-  color: var(--secondary);
+.nav-link:focus,
+.nav-link:hover {
+  color: #000000;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -259,13 +265,11 @@ img {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
-
-
 .dropdown-mega .dropdown-menu[data-bs-popper] {
   margin-top: -2px !important;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-mega  .dropdown-menu {
+.navbar-expand-lg .navbar-nav .dropdown-mega .dropdown-menu {
   position: absolute;
   left: 0;
   right: 0;
@@ -273,48 +277,543 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.navbar>.container-fluid{
+
+.navbar > .container-fluid {
   position: relative;
 }
 
-.megaHeding{
-    font-family: "Manrope";
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: capitalize;
-    line-height: 1.4;
-    color: var(--Black);
+.megaHeding {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--Black);
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.megaDropdown{
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.13) !important;
+.megaDropdown:not(.galleryMega) .megaHeding {
+  color: var(--primary);
+  margin-bottom: 24px;
 }
 
+.megaDropdown {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.233) !important;
+}
 
-.list-group .list-group-item{
+.galleryMega .col-lg-4 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.list-group .list-group-item {
   border: none;
   font-size: 14px;
-  padding: 5px 10px;
+  padding: 2px;
   padding-left: 0;
-  padding-right: 28px;
-  border-bottom: 1px solid var(--lightGrey);
   text-wrap: wrap;
   font-weight: 600;
 }
+.list-group .list-group-item i {
+  color: var(--HoverBlue);
+  margin-right: 4px;
+  transition: 0.3s ease-in-out;
+}
+.list-group .list-group-item:hover i {
+  margin-right: 8px;
+}
+.list-group .list-group-item:hover {
+  color: var(--Black);
+}
+.list-group img {
+  width: 100%;
+  height: auto;
+}
 
-
-.list-group .list-group-item:last-child{
+.list-group .list-group-item:last-child {
   border: none;
   padding-bottom: 0;
 }
 
-
 /* header css end */
 
-/* banner css start */
+/* banner css start  */
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  color: var(--lightGrey);
+}
+
+.Banner .item {
+  height: 100vh;
+  min-height: 344px;
+  position: relative;
+}
+.Banner .item .container {
+  position: absolute;
+  top: 60%;
+  padding: 0 0 0 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Banner .item1 {
+  background: url("../image/BannerImg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Banner .item2 {
+  background: url("../image/Sustainability-of-architectural-fabrics-hero-700x525.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Banner .item3 {
+  background: url("../image/Schools.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subHead {
+  color: #ffffff;
+  font-weight: 700;
+  display: inline-block;
+}
+.Banner .display-3 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.bannerCard {
+  padding: 30px 26px;
+  background: rgba(0, 91, 170, 0.4);
+}
+
+.LinkStyle {
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+  padding: 0.3125rem 0.3125rem 0.25rem 1.875rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.LinkStyle:before {
+  content: "";
+  height: 0.125rem;
+  width: 1.25rem;
+  background-color: #444;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.LinkStyle span {
+  display: inline-block;
+  transform: translateX(0px);
+  transition: all 0.3s ease-in-out;
+}
+
+.LinkStyle:hover {
+  color: #000000;
+}
+
+.LinkStyle:hover:before {
+  transition-delay: 0.3s;
+  left: 0.625rem;
+  background-color: #000000;
+}
+
+.LinkStyle:hover span {
+  transform: translateX(0.625rem);
+}
+
+.Banner .LinkStyle {
+  color: #ffffff;
+}
+.Banner .LinkStyle:before {
+  background-color: #ffffff;
+}
+.Banner .LinkStyle:hover {
+  color: var(--lightGrey);
+}
+
+.Banner .LinkStyle:hover:before {
+  transition-delay: 0.3s;
+  left: 0.625rem;
+  background-color: var(--lightGrey);
+}
+
+.Banner .owl-nav {
+  position: absolute;
+  bottom: 82px;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.Banner .owl-nav button {
+  pointer-events: initial;
+  cursor: pointer;
+  background: rgba(201, 201, 201, 0);
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  z-index: 10;
+  border: 1px solid #d8d8d8 !important;
+}
+.Banner .owl-nav button:hover {
+  background-color: #ffffff !important;
+  color: var(--Black);
+}
+.Banner .owl-nav button span {
+  display: inline-block;
+  transform: translateY(-4px);
+}
+.Banner .owl-carousel .owl-nav button.owl-prev {
+  padding: 0 15px !important;
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Banner .owl-carousel .owl-nav button.owl-next {
+  padding: 0 15px !important;
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+.Banner {
+  position: relative;
+}
 
 /* banner css end */
 
 .defaultPadding {
-  padding: 50px 0;
+  padding: 70px 0;
 }
+
+/* trusted section start  */
+
+.Trusted .therdH {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.Trusted {
+  background: url("../image/Amphiteatre-side.png");
+  background-size: contain;
+  background-size: 230px 185px;
+  background-repeat: no-repeat;
+  background-position: 4px bottom;
+}
+.Trusted iframe {
+  margin-top: 38px;
+  aspect-ratio: 16/9;
+}
+
+.parallax-row {
+  height: 436px;
+  background: url("../image/Torrensville-Parallax.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+
+/* Weather Solutions section start */
+.weatherSolutions {
+}
+.PreferredPartnerCard {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #d7f4c1;
+  margin-bottom: 40px;
+}
+
+.imgpart1 {
+  width: 25%;
+}
+.textPart1 {
+  width: 75%;
+  padding-left: 24px;
+}
+
+.hoverCard {
+  position: relative;
+  overflow: hidden;
+}
+
+.hoverCard h4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  font-family: "Open Sans";
+  padding: 10px 15px 15px 15px;
+  font-size: 16px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(108, 108, 108, 0) 100%
+  );
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  transition: all ease 0.3s;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 175% */
+  text-transform: capitalize;
+  opacity: 0;
+}
+
+.hoverCard a {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hoverCard img {
+  transition: all ease 0.3s;
+}
+.hoverCard:hover h4 {
+  opacity: 1;
+}
+.hoverCard:hover img {
+  transform: scale(1.05);
+}
+
+.btnCommon {
+  display: inline-block;
+  color: #fff;
+  padding: 16px 25px;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1)),var(--secondary);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  text-transform: capitalize;
+  margin-top: 36px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnCommon i{
+  margin-left: 8px;
+}
+
+.btnCommon:hover{
+  color: #000000;
+}
+
+/* Weather Solutions section end */
+
+/* Shade Structures section start */
+.imgBg{
+  background: url("../image/Bulcock-Beach-Monaco-Sunset.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textPart2{
+  color: #ffffff;
+  padding-top: 8vh ;
+  padding-right: 8vw ;
+  padding-bottom: 8vh ;
+  padding-left: 8vw ;
+  background-color: var(--BG-Light);
+}
+
+.textPart2 .therdH{
+  color: #FFF;
+  margin-bottom: 34px;
+}
+.imageHoverCard{
+  position: relative;
+}
+.imageHoverCard a{
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imageHoverCard .imgBox{
+  max-width: 65% ;
+  aspect-ratio: 130/98;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-size: cover !important;
+}
+
+.SportsImg{
+  background: url('../image/StadiumSports_200x150-01.png') no-repeat center;
+}
+
+.imageHoverCard:hover .SportsImg{
+  background: url('../image/StadiumSports_reverse_200x150-01.png') no-repeat center;
+}
+
+.RetailImg{
+  background: url('../image/alt-RetailCommercial_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .RetailImg{
+  background: url('../image/white-alt-RetailCommercial_200x150.png') no-repeat center;
+}
+.HospitalityImg{
+  background: url('../image/alt-HospitalityTourism_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .HospitalityImg{
+  background: url('../image/white-alt-HospitalityTourism_200x150.png') no-repeat center;
+}
+
+.SchoolsImg{
+  background: url('../image/alt-SportsRecreation_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .SchoolsImg{
+  background: url('../image/white-alt-SportsRecreation_200x150.png') no-repeat center;
+}
+
+.GovernmentImg{
+  background: url('../image/alt-GovernmentCouncil_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .GovernmentImg{
+  background: url('../image/white-alt-GovernmentCouncil_200x150.png') no-repeat center;
+}
+
+.TransportImg{
+  background: url('../image/alt-TransportInfrastructure_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .TransportImg{
+  background: url('../image/white-alt-TransportInfrastructure_200x150.png') no-repeat center;
+}
+
+.MiningImg{
+  background: url('../image/alt-MiningIndustrial_200x150.png') no-repeat center;
+}
+
+.imageHoverCard:hover .MiningImg{
+  background: url('../image/white-alt-MiningIndustrial_200x150.png') no-repeat center;
+}
+
+.yellowBtn {
+  display: inline-block;
+  color: #fff;
+  padding: 16px 25px;
+  border-radius: 5px;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1)),var(--AccentColour);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 175% */
+  text-transform: capitalize;
+  margin-top: 36px;
+  transition: all 0.3s ease-in-out;
+}
+
+.yellowBtn i{
+  margin-left: 8px;
+}
+
+.yellowBtn:hover{
+  color: #000000;
+}
+.ShadeStructures .yellowBtn{
+margin-top: 30px;
+}
+/* Shade Structures section end */
+
+.rowDirection{
+  flex-direction: row-reverse;
+}
+
+.rowDirection .textPart2{
+background-color: transparent;
+}
+
+.rowDirection .imgBg{
+  background: url("../image/why-makmax-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rowDirection .textPart2{
+  color: #707070;
+  background-color: #f3f3f3;
+}
+
+.rowDirection .textPart2 .therdH{
+  color: var(--primary);
+}
+
+
+/* Articles & Stories start */
+
+
+
+.hoverCard2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.hoverCard2 a {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hoverCard2 img {
+  transition: all ease 0.3s;
+}
+
+.articalCard:hover img {
+  transform: scale(1.05);
+}
+.simpleAnchor{
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.articalCard span{
+color: #262626;
+display: inline-block;
+margin-bottom: 12px;
+}
+.articalCard span i{
+  margin-right: 8px;
+}
+
+.articalCard .fourthH{
+  color: var(--primary);
+  margin-top: 20px;
+  min-height: 75px;
+}
+.articalCard .fourthH a{
+  color: var(--primary);
+}
+
+/* Articles & Stories end */
