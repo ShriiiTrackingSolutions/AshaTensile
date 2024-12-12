@@ -123,6 +123,15 @@ img {
 }
 
 .fourthH {
+  font-size: 30px;
+  color: #005bab;
+  line-height: 1.5;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fifthH {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -601,7 +610,12 @@ img {
   color: #fff;
   padding: 16px 25px;
   border-radius: 5px;
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1)),var(--secondary);
+  background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.1)
+    ),
+    var(--secondary);
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
@@ -612,40 +626,40 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.btnCommon i{
+.btnCommon i {
   margin-left: 8px;
 }
 
-.btnCommon:hover{
+.btnCommon:hover {
   color: #000000;
 }
 
 /* Weather Solutions section end */
 
 /* Shade Structures section start */
-.imgBg{
+.imgBg {
   background: url("../image/Bulcock-Beach-Monaco-Sunset.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.textPart2{
+.textPart2 {
   color: #ffffff;
-  padding-top: 8vh ;
-  padding-right: 8vw ;
-  padding-bottom: 8vh ;
-  padding-left: 8vw ;
+  padding-top: 8vh;
+  padding-right: 8vw;
+  padding-bottom: 8vh;
+  padding-left: 8vw;
   background-color: var(--BG-Light);
 }
 
-.textPart2 .therdH{
-  color: #FFF;
+.textPart2 .therdH {
+  color: #fff;
   margin-bottom: 34px;
 }
-.imageHoverCard{
+.imageHoverCard {
   position: relative;
 }
-.imageHoverCard a{
+.imageHoverCard a {
   display: inline-block;
   position: absolute;
   height: 100%;
@@ -654,67 +668,76 @@ img {
   left: 0;
 }
 
-.imageHoverCard .imgBox{
-  max-width: 65% ;
+.imageHoverCard .imgBox {
+  max-width: 65%;
   aspect-ratio: 130/98;
-  margin-left: auto ;
-  margin-right: auto ;
+  margin-left: auto;
+  margin-right: auto;
   background-size: cover !important;
 }
 
-.SportsImg{
-  background: url('../image/StadiumSports_200x150-01.png') no-repeat center;
+.SportsImg {
+  background: url("../image/StadiumSports_200x150-01.png") no-repeat center;
 }
 
-.imageHoverCard:hover .SportsImg{
-  background: url('../image/StadiumSports_reverse_200x150-01.png') no-repeat center;
+.imageHoverCard:hover .SportsImg {
+  background: url("../image/StadiumSports_reverse_200x150-01.png") no-repeat
+    center;
 }
 
-.RetailImg{
-  background: url('../image/alt-RetailCommercial_200x150.png') no-repeat center;
+.RetailImg {
+  background: url("../image/alt-RetailCommercial_200x150.png") no-repeat center;
 }
 
-.imageHoverCard:hover .RetailImg{
-  background: url('../image/white-alt-RetailCommercial_200x150.png') no-repeat center;
+.imageHoverCard:hover .RetailImg {
+  background: url("../image/white-alt-RetailCommercial_200x150.png") no-repeat
+    center;
 }
-.HospitalityImg{
-  background: url('../image/alt-HospitalityTourism_200x150.png') no-repeat center;
-}
-
-.imageHoverCard:hover .HospitalityImg{
-  background: url('../image/white-alt-HospitalityTourism_200x150.png') no-repeat center;
+.HospitalityImg {
+  background: url("../image/alt-HospitalityTourism_200x150.png") no-repeat
+    center;
 }
 
-.SchoolsImg{
-  background: url('../image/alt-SportsRecreation_200x150.png') no-repeat center;
+.imageHoverCard:hover .HospitalityImg {
+  background: url("../image/white-alt-HospitalityTourism_200x150.png") no-repeat
+    center;
 }
 
-.imageHoverCard:hover .SchoolsImg{
-  background: url('../image/white-alt-SportsRecreation_200x150.png') no-repeat center;
+.SchoolsImg {
+  background: url("../image/alt-SportsRecreation_200x150.png") no-repeat center;
 }
 
-.GovernmentImg{
-  background: url('../image/alt-GovernmentCouncil_200x150.png') no-repeat center;
+.imageHoverCard:hover .SchoolsImg {
+  background: url("../image/white-alt-SportsRecreation_200x150.png") no-repeat
+    center;
 }
 
-.imageHoverCard:hover .GovernmentImg{
-  background: url('../image/white-alt-GovernmentCouncil_200x150.png') no-repeat center;
+.GovernmentImg {
+  background: url("../image/alt-GovernmentCouncil_200x150.png") no-repeat center;
 }
 
-.TransportImg{
-  background: url('../image/alt-TransportInfrastructure_200x150.png') no-repeat center;
+.imageHoverCard:hover .GovernmentImg {
+  background: url("../image/white-alt-GovernmentCouncil_200x150.png") no-repeat
+    center;
 }
 
-.imageHoverCard:hover .TransportImg{
-  background: url('../image/white-alt-TransportInfrastructure_200x150.png') no-repeat center;
+.TransportImg {
+  background: url("../image/alt-TransportInfrastructure_200x150.png") no-repeat
+    center;
 }
 
-.MiningImg{
-  background: url('../image/alt-MiningIndustrial_200x150.png') no-repeat center;
+.imageHoverCard:hover .TransportImg {
+  background: url("../image/white-alt-TransportInfrastructure_200x150.png")
+    no-repeat center;
 }
 
-.imageHoverCard:hover .MiningImg{
-  background: url('../image/white-alt-MiningIndustrial_200x150.png') no-repeat center;
+.MiningImg {
+  background: url("../image/alt-MiningIndustrial_200x150.png") no-repeat center;
+}
+
+.imageHoverCard:hover .MiningImg {
+  background: url("../image/white-alt-MiningIndustrial_200x150.png") no-repeat
+    center;
 }
 
 .yellowBtn {
@@ -722,7 +745,12 @@ img {
   color: #fff;
   padding: 16px 25px;
   border-radius: 5px;
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1)),var(--AccentColour);
+  background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.1)
+    ),
+    var(--AccentColour);
   font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
@@ -733,45 +761,42 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.yellowBtn i{
+.yellowBtn i {
   margin-left: 8px;
 }
 
-.yellowBtn:hover{
+.yellowBtn:hover {
   color: #000000;
 }
-.ShadeStructures .yellowBtn{
-margin-top: 30px;
+.ShadeStructures .yellowBtn {
+  margin-top: 30px;
 }
 /* Shade Structures section end */
 
-.rowDirection{
+.rowDirection {
   flex-direction: row-reverse;
 }
 
-.rowDirection .textPart2{
-background-color: transparent;
+.rowDirection .textPart2 {
+  background-color: transparent;
 }
 
-.rowDirection .imgBg{
+.rowDirection .imgBg {
   background: url("../image/why-makmax-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.rowDirection .textPart2{
+.rowDirection .textPart2 {
   color: #707070;
   background-color: #f3f3f3;
 }
 
-.rowDirection .textPart2 .therdH{
+.rowDirection .textPart2 .therdH {
   color: var(--primary);
 }
 
-
 /* Articles & Stories start */
-
-
 
 .hoverCard2 {
   position: relative;
@@ -793,27 +818,486 @@ background-color: transparent;
 .articalCard:hover img {
   transform: scale(1.05);
 }
-.simpleAnchor{
+.simpleAnchor {
   color: var(--primary);
   font-weight: 600;
   text-transform: capitalize;
 }
-.articalCard span{
-color: #262626;
-display: inline-block;
-margin-bottom: 12px;
+.articalCard span {
+  color: #262626;
+  display: inline-block;
+  margin-bottom: 12px;
 }
-.articalCard span i{
+.articalCard span i {
   margin-right: 8px;
 }
 
-.articalCard .fourthH{
+.articalCard .fifthH {
   color: var(--primary);
   margin-top: 20px;
   min-height: 75px;
 }
-.articalCard .fourthH a{
+.articalCard .fifthH a {
   color: var(--primary);
 }
 
 /* Articles & Stories end */
+
+.parallax-row2 {
+  height: 436px;
+  background: url("../image/Tumbalong-Green.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+
+/* Drone Shoot section start */
+/* ---------------- */
+/* HTML Reset Stuff */
+/* ---------------- */
+
+.DroneShoot button span {
+  color: white;
+}
+
+
+
+.DroneShoot .video-item iframe {
+  transition: transform 0.5s ease-in-out;
+  aspect-ratio: 16/9;
+}
+
+.DroneShoot .owl-carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.DroneShoot .owl-stage-outer {
+  padding: 40px 0;
+  overflow: visible !important;
+}
+
+.DroneShoot .owl-item {
+  overflow: hidden;
+}
+
+.DroneShoot .owl-item.active {
+  overflow: visible;
+}
+
+.DroneShoot .owl-item.active .item iframe {
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.DroneShoot .owl-item.active {
+  position: relative;
+  z-index: 5;
+}
+
+.DroneShoot .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 8;
+}
+
+.DroneShoot .owl-nav button {
+  width: 50px;
+  pointer-events: all;
+}
+.owl-nav .owl-prev {
+  display: inline-block;
+  margin-left: 20px;
+}
+.DroneShoot .owl-nav .owl-next {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.DroneShoot .owl-nav button span {
+  font-size: 70px;
+}
+
+/*  */
+
+.DroneShoot .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  pointer-events: none;
+  z-index: 8;
+}
+.DroneShoot .owl-dot span {
+  width: 60px;
+  height: 60px;
+  pointer-events: all;
+  text-align: center;
+  display: block;
+  border: 4px solid #00000036;
+  transition: all 0.3s ease-in-out;
+  background-clip: padding-box !important;
+}
+.DroneShoot .owl-dot span:hover{
+  border: 4px solid var(--secondary);
+}
+
+.DroneShoot .owl-dot.active span {
+  border: 4px solid var(--secondary);
+}
+
+.DroneShoot .owl-dot:nth-child(1) span{
+  background: url('../image/Helensvale-Media-Thumbnail.jpg') center no-repeat;
+  background-size: cover;
+
+}
+.DroneShoot .owl-dot:nth-child(2) span{
+  background: url('../image/Glendale-Marketplace-Media-Thumbnail.jpg') center no-repeat;
+  background-size: cover;
+
+}
+.DroneShoot .owl-dot:nth-child(3) span{
+  background: url('../image/Sydney-Football-Stadium-Thumbnail.jpg') center no-repeat;
+  background-size: cover;
+
+}
+.DroneShoot .owl-dot:nth-child(4) span{
+  background: url('../image/Schools.jpg') center no-repeat;
+  background-size: cover;
+
+}
+.DroneShoot .owl-dot:nth-child(5) span{
+  background: url('../image/Torrensville-Parallax.jpg') center no-repeat;
+  background-size: cover;
+
+}
+
+/* Drone Shoot section end */
+
+/* footer section start  */
+.Footer{
+  background: url('../image/footer-bg.jpg') center no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+.Footer.customContainer .container-fluid.custom {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Footer .brandImg{
+  display: inline-block;
+  width: 184px;
+  margin-bottom: 24px;
+}
+.footerLinks{
+  display: block;
+  color: #b8b7b7;
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+address .footerLinks{
+  margin-top: 30px;
+}
+
+.footer-social a{
+  font-size: 30px;
+  margin-right: 8px;
+  color: #b8b7b7;
+  transition: all 0.3s ease-in-out;
+}
+.footer-social a:hover,.footerLinks:hover{
+  color: #ffffff;
+}
+
+.linkList {
+  border: none;
+  display: block;
+  color: #b8b7b7;
+  position: relative;
+  padding: 2px;
+  padding-left: 16px;
+  text-wrap: wrap;
+  font-weight: 600;
+  transition:  padding-left 0.3s ease-in-out;
+}
+.Footer .fifthH{
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.linkList i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #acacac;
+  margin-right: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.linkList:hover {
+  padding-left: 20px;
+  color: #ffffff;
+}
+/* footer section end */
+
+
+
+/* ---------------- */
+/* Product Page*/
+/* ---------------- */
+
+.productPage0.Trusted{
+  background: none;
+}
+.productPage0.Trusted .secH{
+  text-align: center;
+  color: var(--secondary);
+}
+
+.parallax-row3 {
+  height: 436px;
+  background: url("../image/Knox-Hero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+
+.contactBanner img{
+  max-height: 436px;
+  object-fit: cover;
+}
+
+
+
+/* ---------------- */
+/* Contact Page*/
+/* ---------------- */
+
+.contactFormMenu .container-fluid.custom{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactFormMenu .secH{
+  text-align: center;
+}
+
+
+.sidePannel{
+  padding:  34px 15px;
+  background-color: var(--BG-Light);
+}
+
+.sidePannel .colBrand{
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.sideLinks{
+  margin-top: 20px;
+  list-style: none;
+}
+
+.sideLinks a{
+  position: relative;
+  font-size: 14px;
+  padding-left: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.sideLinks a i{
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.sideLinks a:hover{
+  color: var(--HoverBlue);
+}
+
+.sidePannelSocial{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 4px;
+  margin: 24px 0;
+  padding-left: 32px;
+}
+
+.sidePannelSocial a{
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--primary);
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+.sidePannelSocial a:hover{
+  color: var(--Black);
+}
+
+.instaCard{
+position: relative;
+margin: 20px 0;
+color: #ffffff;
+transition: color 0.3s ease-in-out;
+}
+
+.instaCard img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.instaCard:hover{
+  color: var(--Black);
+}
+
+.instaCard a{
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.overLay{
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+font-size: 24px;
+border-radius: 50%;
+height: 100%;
+width: 100%;
+background-color: #000000c0;
+transition: opacity  0.3s ease-in-out;
+}
+
+.instaCard:hover .overLay{
+  opacity: 1;
+}
+
+.imgwrap{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.galleryType{
+  row-gap: 24px;
+}
+.cardImage{
+  position: relative;
+}
+
+.cardImage img{
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.cardImage a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #ffffff2d;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardImage:hover a{
+  opacity: 1;
+}
+
+.buttonsWrap{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px 8px;
+align-items: center;
+}
+
+
+
+.socialBtn {
+  display: inline-block;
+  padding: 7px 14px;
+  background: #333;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 16px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+
+.socialBtn i {
+  margin-left: 8px;
+}
+
+.socialBtn:hover {
+  color: #fff;
+}
+
+.socialBtn:hover{
+  box-shadow: inset 0 0 20px 20px rgba(255, 255, 255, 0.25);
+}
+
+.socialBtn.Bluesocial{
+  background-color: var(--primary);
+}
+
+.mainFormSection{
+  padding: 35px 15px 35px 3px;
+}
+
+.contactFormMenu .container-fluid>.row{
+  background-color: #f8f8f8 ;
+}
+
+.mainFormSection .fourthH{
+   padding-bottom: 20px;
+   margin-bottom: 30px;
+   border-bottom: 1px solid #bdbdbda8;
+}
+
+.mainFormSection .red{
+  color: red;
+}
+
+.mainFormSection .bodySmall{
+  margin-bottom: 0;
+  line-height: 1.75;
+}

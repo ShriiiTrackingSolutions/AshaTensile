@@ -71,13 +71,18 @@
     padding-bottom: 10px;
 }
 
-.parallax-row {
+.parallax-row,.parallax-row2,.parallax-row3 {
   height: auto;
   background: none;
 }
+
 .imgBg {
   background:none;
 }
+.bannerCard {
+  display: inline-block;
+}
+
  }
 
  @media screen and (max-width: 912px) {
@@ -97,17 +102,56 @@ header .container-fluid {
   padding: 0px 35px;
 }
 
+.Footer .container-fluid>.row{
+  row-gap: 30px;
+}
 
+.PreferredPartnerCard .imgpart1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.PreferredPartnerCard .textPart1 {
+  width: 100%;
+  padding-left: 0px;
+}
 
+.therdH {
+  font-size: 32px;
+}
+
+.Trusted {
+  background: none;
+}
+.bannerCard {
+  display: inline-block;
+  padding: 24px;
+  background: rgba(0, 91, 170, 0.4);
+}
+.bannerCard .display-3{
+  font-size: 30px;
+}
+
+.contactBanner img{
+  max-height: unset;
+  min-height: 500px;
+  object-fit: cover;
+}
  }
 
 @media (max-width: 575.98px) {
-  
   .navbar-brand {
     margin-right: 15px;
     width: 12rem;
 }
 
+.Footer{
+  text-align: center;
+}
+
+.Footer .linkList {
+  display: table;
+  margin: auto;
+}
 
 }
 
