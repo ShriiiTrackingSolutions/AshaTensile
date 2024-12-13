@@ -1020,6 +1020,10 @@ address .footerLinks{
 .footer-social a:hover,.footerLinks:hover{
   color: #ffffff;
 }
+.Footer .fifthH{
+  color: #ffffff;
+  margin-bottom: 30px;
+}
 
 .linkList {
   border: none;
@@ -1032,10 +1036,7 @@ address .footerLinks{
   font-weight: 600;
   transition:  padding-left 0.3s ease-in-out;
 }
-.Footer .fifthH{
-  color: #ffffff;
-  margin-bottom: 30px;
-}
+
 .linkList i {
   position: absolute;
   left: 0;
@@ -1073,6 +1074,32 @@ address .footerLinks{
   background-attachment: fixed;
   background-position: 0 center;
 }
+
+.productPage0.Trusted .fifthH{
+  margin-top: 12px;
+}
+.productPage0.Trusted .fifthH a{
+  color: var(--primary);
+}
+.productPage0.Trusted hr{
+  opacity: 1;
+  color: var(--secondary);
+}
+
+
+.productPage0.Trusted .linkList {
+  color: var(--Black);
+}
+
+.productPage0.Trusted .linkList i {
+  color: var(--primary);
+}
+
+.productPage0.Trusted .linkList:hover {
+  padding-left: 20px;
+  color: var(--primary);
+}
+
 
 .contactBanner img{
   max-height: 436px;
@@ -1353,14 +1380,13 @@ border: none;
   font-weight: 400;
   line-height: normal;
   display: flex;
-  background-color: var(--primary);
+  background-color: var(--HoverBlue);
 }
 .buttonSection .btnCommon:hover{
-  color: #ffffff;
+  background-color: var(--secondary);
 }
 
 .buttonSection .btnCommon i{
-
   margin: 0;
   margin-top:   4px;
   margin-right: 8px;
