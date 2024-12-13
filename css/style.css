@@ -1301,3 +1301,69 @@ align-items: center;
   margin-bottom: 0;
   line-height: 1.75;
 }
+
+#contactForm {
+  font-size: 14px;
+}
+
+
+#contactForm button{
+  background-color: #0a3a89;
+border: none;
+}
+#contactForm button:hover{
+  background-color: var(--secondary);
+}
+
+#contactForm textarea{
+  resize: none;
+}
+
+#contactForm input,#contactForm select{
+  font-size: 15px;
+  border-radius: 0;
+  padding: 8px;
+  border: 1px solid #DADADA !important
+}
+
+#contactForm input,#contactForm select option{
+  font-size: 15px;
+}
+
+
+/* brand illustrations start */
+.brandIllustrations .container-fluid.custom{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.buttonSection>div{
+  padding: 0 10%;
+}
+
+.buttonSection .btnCommon{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  background-color: var(--primary);
+}
+.buttonSection .btnCommon:hover{
+  color: #ffffff;
+}
+
+.buttonSection .btnCommon i{
+
+  margin: 0;
+  margin-top:   4px;
+  margin-right: 8px;
+}
+
+/* brand illustrations end */

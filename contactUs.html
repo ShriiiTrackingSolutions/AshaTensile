@@ -227,8 +227,8 @@
       <div class="container-fluid custom">
         <h2 class="secH">Contact MakMax Australia</h2>
 
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row mt-5">
+          <div class="col-md-4">
             <div class="sidePannel">
               <a class="colBrand" href="index.html"
                 ><img src="image/White_ASHA TENSILE.png" alt=""
@@ -417,7 +417,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8 mainFormSection">
+          <div class="col-md-8 mainFormSection">
             <h2 class="fourthH">Enquire Online</h2>
             <p class="bodySmall">
               Contact MakMax Australia via the form below to discuss your
@@ -426,13 +426,165 @@
             <p class="bodySmall">
               "<span class="red">*</span>" indicates required field
             </p>
-            
+
+            <!-- form start  -->
+
+            <form class="row g-3 needs-validation" id="contactForm" novalidate>
+              <div class="col-12">
+                <label for="validationCustom01" class="form-label"
+                  >Your Name<span class="red"> *</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name</div>
+              </div>
+              <div class="col-12">
+                <label for="validationCustom02" class="form-label"
+                  >Company</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                />
+              </div>
+              <div class="col-12">
+                <label for="validationCustom03" class="form-label"
+                  >Phone<span class="red"> *</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide your Number.</div>
+              </div>
+              <div class="col-12">
+                <label for="validationCustomUsername" class="form-label"
+                  >Email<span class="red"> *</span></label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your Email.</div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="LocationValidate" class="form-label"
+                  >Location<span class="red"> *</span></label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="LocationValidate"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your Location.</div>
+              </div>
+              <div class="col-12">
+                <label for="validationCustom04" class="form-label"
+                  >How Did You Hear About ASHA TENSILE?<span class="red">
+                    *</span
+                  ></label
+                >
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Magazine Article / Advertisement</option>
+                  <option>Specified by Architect or Developer</option>
+                  <option>Have Worked With MakMax Before</option>
+                  <option>Product Sticker / Branding</option>
+                  <option>Referred To By Another Customer</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="validationTextarea" class="form-label"
+                  >Enquiry / Message<span class="red"> *</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="validationTextarea"
+                  rows="10"
+                  cols="50"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    Sign up to ASHA TENSILE email updates
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btnCommon col-12" type="submit">
+                  Submit form
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
     <!-- contact Form and menu section end -->
+
+    <!-- brand illustrations start -->
+    <section class="brandIllustrations defaultPadding">
+      <div class="container-fluid custom">
+        <div class="row">
+          <div class="col-md-4 col-sm-3">
+            <img
+              src="image/contact Images/Amphiteatre-front.png"
+              alt="Amphiteatre front"
+            />
+          </div>
+          <div class="col-md-4 col-sm-6 buttonSection">
+            <div> <img
+              src="image/contact Images/ASHA TENSILE.png"
+              alt="ASHA TENSILE logo"
+            /></div>
+           
+            <a class="btnCommon" href="contactUs.html">
+              <i class="fa-solid fa-earth-americas"> </i> Contact our Global Asha Tensile Brands</a
+            >
+          </div>
+          <div class="col-md-4 col-sm-3">
+            <img
+              src="image/contact Images/Fabric-Edge-simple.png"
+              alt="Fabric Edge simple"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- brand illustrations end -->
 
     <footer class="Footer defaultPadding customContainer">
       <div class="container-fluid custom">
@@ -701,6 +853,32 @@
           }
         }
       }
+    </script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
     </script>
   </body>
 </html>
