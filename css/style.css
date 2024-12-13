@@ -475,7 +475,7 @@ img {
 .Banner .owl-nav button {
   pointer-events: initial;
   cursor: pointer;
-  background: rgba(201, 201, 201, 0);
+  background: rgba(0, 0, 0, 0.308) !important;
   width: 50px;
   height: 50px;
   display: block;
@@ -1393,3 +1393,52 @@ border: none;
 }
 
 /* brand illustrations end */
+
+
+/* ----------------------- */
+/* Product Description Page*/
+/* ----------------------- */
+
+/* product description section start */
+
+
+.container-fluid.Maximum {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconLeftBtn{
+  color: #fff;
+  padding: 16px 25px;
+  border-radius: 5px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.1)
+    );
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; /* 175% */
+  text-transform: capitalize;
+  margin-top: 36px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  width: max-content;
+  background-color: var(--HoverBlue);
+}
+.iconLeftBtn:hover{
+  color: var(--Black);
+  background-color: var(--secondary);
+}
+
+.iconLeftBtn i{
+  margin: 0;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+
+/* product description section end */
