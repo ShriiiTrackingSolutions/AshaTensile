@@ -71,7 +71,7 @@
     padding-bottom: 10px;
 }
 
-.parallax-row,.parallax-row2,.parallax-row3 {
+.parallax-row,.parallax-row2,.parallax-row3,.parallax-row4 {
   height: auto;
   background: none;
 }
@@ -82,6 +82,20 @@
 .bannerCard {
   display: inline-block;
 }
+.ourCoreValues .container-fluid>.row {
+  row-gap: 24px;
+}
+.ourCoreValues .container-fluid>.row .col-lg-4:nth-child(1){
+order: 2;
+}
+
+.ourCoreValues .container-fluid>.row .col-lg-4:nth-child(2){
+  order: 1;
+  }
+.ourCoreValues .container-fluid>.row .col-lg-4:nth-child(3){
+  order: 3;
+  }
+
 
  }
 
@@ -97,6 +111,9 @@
 
 @media (max-width: 767.98px) {
 
+  #accordionFlushExample1 .fourthH{
+    font-size: 18px;
+  }
 
 header .container-fluid {
   padding: 0px 35px;

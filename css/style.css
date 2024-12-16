@@ -984,6 +984,36 @@ img {
 
 /* Drone Shoot section end */
 
+/* FAQ section start */
+
+.styledPara {
+  padding-left: 40px;
+  border-left: 4px solid var(--primary);
+}
+
+#accordionFlushExample1 .styledPara {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--Black);
+}
+#accordionFlushExample1 .fourthH{
+  color: var(--Black);
+}
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary) !important;
+  background-color: transparent;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
+
+/* FAQ section End */
+
+
 /* footer section start  */
 .Footer{
   background: url('../image/footer-bg.jpg') center no-repeat;
@@ -1442,3 +1472,79 @@ border: none;
 
 
 /* product description section end */
+
+
+
+
+/* -------------- */
+/* About Us Page*/
+/* ------------- */
+
+ /* who we are  section start */
+.our___cards{
+  height: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px 2px #00000017;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 30px;
+}
+
+.our___cards:hover{
+  box-shadow: 2px 2px 20px 2px #0000002c;
+}
+.ourCoreValues ul li strong{
+  font-size: 18px;
+}
+/* who we are  section end */
+
+
+/* Why Choose Us section start */
+
+.Expertise{
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+
+/* Why Choose Us section end */
+
+.parallax-row4 {
+  height: 436px;
+  background: url("../image/About_Image/ParalaxImage4.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+
+
+/* Our Services section start */
+.ourServices .fourthH{
+  color: var(--primary);
+}
+
+/* Our Services section end */
+
+
+/* ------------- */
+/* Services Page*/
+/* ------------ */
+
+.ourServiceProcedure .serviceBox{
+  text-align: center;
+  padding: 20px;
+}
+
+.ourServiceProcedure .serviceIcons{
+
+  width: 100px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.ourServiceProcedure .fifthH{
+  color: var(--HoverBlue);
+  text-transform: capitalize;
+  text-align: center;
+}
