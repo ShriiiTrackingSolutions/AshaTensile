@@ -1548,3 +1548,101 @@ border: none;
   text-transform: capitalize;
   text-align: center;
 }
+
+
+/* ------------- */
+/* Services Page*/
+/* ------------ */
+
+
+/* Tensile Membrane Structures section start */
+
+.weatherSolutions.TensilePage0 .fifthH{
+  font-size: 26px;
+  font-weight: 400;
+color: var(--primary);
+} 
+/* Tensile Membrane Structures section end */
+
+
+.parallax-row5 {
+  height: 436px;
+  background: url("../image/TensileStructure/Macquarie-uni-parallax.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+
+.architecturalMembraneIntroductionPage0.Trusted ol li::marker {
+ font-weight: 800;
+}
+
+/* All Types of Tensile Fabric table section start */
+
+.generalComparisonsTable table {
+  border-collapse: collapse;
+  min-width: 1150px;
+  color: #000000;
+  position: relative;
+  width: 100%;
+}
+.generalComparisonsTable .tableWrapper {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 200px); /* Limit table height */
+  min-height: 500px; /* Minimum height */
+  border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
+}
+
+.generalComparisonsTable th, 
+.generalComparisonsTable td {
+  text-align: left;
+  vertical-align: text-top;
+  padding: 8px;
+}
+
+.generalComparisonsTable th {
+  color: #ffffff;
+  background-color: var(--primary);
+}
+
+.generalComparisonsTable th:first-of-type {
+  position: sticky;
+  left: 0;
+  background-color: var(--primary); /* Ensures left column stays consistent */
+  z-index: 2; /* Makes the first column appear above other content */
+}
+
+.generalComparisonsTable .fst_Table th {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary);
+  z-index: 3; /* Ensures the header row appears above everything else */
+}
+
+.generalComparisonsTable .fst_Table .fst_TH {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--primary); /* Ensures the top-left corner stays consistent */
+  z-index: 4; /* Highest z-index to prevent conflicts */
+}
+
+.generalComparisonsTable tr:nth-child(even) {
+  background-color: #d0e0ee;
+}
+
+/* All Types of Tensile Fabric table section end */
+
+
+.generalComparisonsTable.ProductDiscriptionPage0  th:first-of-type{
+  max-width: 270px;
+  min-width: 110px;
+}
+
+.generalComparisonsTable .tableWrapper.smallTable  {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: unset; /* Limit table height */
+  min-height: unset; /* Minimum height */
+  border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
+}

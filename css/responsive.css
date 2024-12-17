@@ -71,7 +71,7 @@
     padding-bottom: 10px;
 }
 
-.parallax-row,.parallax-row2,.parallax-row3,.parallax-row4 {
+.parallax-row,.parallax-row2,.parallax-row3,.parallax-row4,.parallax-row5 {
   height: auto;
   background: none;
 }
@@ -158,7 +158,11 @@ header .container-fluid {
   padding: 35px 15px 35px 15px;
 }
 
-
+.weatherSolutions.TensilePage0 .fifthH{
+  font-size: 18px;
+  font-weight: 400;
+color: var(--primary);
+} 
  }
 
 @media (max-width: 575.98px) {
