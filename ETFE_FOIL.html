@@ -232,7 +232,8 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
         </h2>
 
         <div  class="tableWrapper smallTable" style="overflow-x: auto">
-          <table>
+          <table class="ResponsiveTable">
+            <thead>
             <tr class="fst_Table">
               <th class="fst_TH">Type</th>
               <th>Layers</th>
@@ -240,8 +241,9 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
               <th>Layer Details</th>
               <th>Benefits</th>
               <th>Usage</th>
-            
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <th>Single Layer ETFE</th>
               <td>One single ETFE film</td>
@@ -266,7 +268,7 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
               <td>Superior thermal performance, acoustic dampening, and structural stability.</td>
               <td>Ideal for high-performance roofing applications in stadiums, transport hubs, and commercial spaces requiring enhanced insulation and strength.</td>
             </tr>
-                 
+          </tbody>
           </table>
         </div>
       </div>
@@ -282,13 +284,16 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
           </h2>
   
           <div  class="tableWrapper smallTable" style="overflow-x: auto">
-            <table>
+            <table  class="ResponsiveTable">
+              <thead>
               <tr class="fst_Table">
                 <th class="fst_TH">Feature</th>
                 <th>Single Layer ETFE Foil</th>
                 <th>Double Layer ETFE Foil</th>
                 <th>Triple Layer ETFE Foil</th> 
               </tr>
+            </thead>
+            <tbody>
               <tr>
                 <th>Number of Layers</th>
                <td>1</td>
@@ -415,7 +420,7 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
                 <td>10–15 years.</td>
                 <td>15–20 years.</td>
               </tr>
-                   
+            </tbody>
             </table>
           </div>
         </div>
@@ -585,6 +590,26 @@ In two or more layers, a pneumatic cushion is created that is then attached usin
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+
+    <script> //Table Js
+      document.querySelectorAll(".ResponsiveTable").forEach((table) => {
+        const headers = table.querySelectorAll("thead th");
+        const rows = table.querySelectorAll("tbody tr");
+    
+        const headerText = Array.from(headers).map((header) =>
+          header.textContent.trim()
+        );
+    
+        rows.forEach((row) => {
+          row.querySelectorAll("td").forEach((cell, index) => {
+            cell.setAttribute("data-th", headerText[index+1]);
+          });
+        });
+      });
+    </script>
+
+
     <script>
       $(document).ready(function () {
         var videoSlider = $("#ca2");

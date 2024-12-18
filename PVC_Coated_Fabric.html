@@ -232,14 +232,17 @@ Because PVC is a thermoplastic, this membrane can be softened into a semi-solid 
           Acrylic vs. Polyester Fabrics in Layer Functionality
         </h2>
 
-        <div  class="tableWrapper" style="overflow-x: auto">
-          <table>
+        <div  class="tableWrapper smallTable" style="overflow-x: auto">
+          <table class="ResponsiveTable">
+<thead>
             <tr class="fst_Table">
               <th class="fst_TH">Attribute</th>
               <th>Acrylic Fabric</th>
               <th>Polyester Fabric</th>
             
             </tr>
+          </thead>
+<tbody>
             <tr>
               <th>Number of Layers</th>
               <td>
@@ -354,7 +357,7 @@ Because PVC is a thermoplastic, this membrane can be softened into a semi-solid 
               <td>Medium to High</td>
             </tr>
             
-          
+          </tbody>
           </table>
         </div>
       </div>
@@ -522,6 +525,27 @@ Because PVC is a thermoplastic, this membrane can be softened into a semi-solid 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+
+
+
+    <script> //Table Js
+      document.querySelectorAll(".ResponsiveTable").forEach((table) => {
+        const headers = table.querySelectorAll("thead th");
+        const rows = table.querySelectorAll("tbody tr");
+    
+        const headerText = Array.from(headers).map((header) =>
+          header.textContent.trim()
+        );
+    
+        rows.forEach((row) => {
+          row.querySelectorAll("td").forEach((cell, index) => {
+            cell.setAttribute("data-th", headerText[index+1]);
+          });
+        });
+      });
+    </script>
+
     <script>
       $(document).ready(function () {
         var videoSlider = $("#ca2");

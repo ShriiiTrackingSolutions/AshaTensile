@@ -243,14 +243,17 @@
           All Types of Tensile Fabric General Comparisons
         </h2>
 
-        <div  class="tableWrapper" style="overflow-x: auto">
-          <table>
+        <div  class="tableWrapper " style="overflow-x: auto">
+          <table  class="ResponsiveTable">
+            <thead>  
             <tr class="fst_Table">
               <th class="fst_TH">Attribute</th>
               <th>PVC Coated Fabric</th>
               <th>ETFE Foil</th>
               <th>HDPE (High-Density Polyethylene)</th>
             </tr>
+          </thead> 
+          <tbody>
             <tr>
               <th>1.&nbsp;Material</th>
               <td>
@@ -422,7 +425,7 @@
               <td>15-25 years</td>
               <td>8-12 years</td>
             </tr>
-          
+          </tbody>
           
           </table>
         </div>
@@ -591,6 +594,24 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+    <script> //Table Js
+      document.querySelectorAll(".ResponsiveTable").forEach((table) => {
+        const headers = table.querySelectorAll("thead th");
+        const rows = table.querySelectorAll("tbody tr");
+    
+        const headerText = Array.from(headers).map((header) =>
+          header.textContent.trim()
+        );
+    
+        rows.forEach((row) => {
+          row.querySelectorAll("td").forEach((cell, index) => {
+            cell.setAttribute("data-th", headerText[index+1]);
+          });
+        });
+      });
+    </script>
+
     <script>
       $(document).ready(function () {
         var videoSlider = $("#ca2");

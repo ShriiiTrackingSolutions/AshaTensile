@@ -1590,7 +1590,7 @@ color: var(--primary);
 .generalComparisonsTable .tableWrapper {
   overflow-y: auto; /* Enable vertical scrolling */
   max-height: calc(100vh - 200px); /* Limit table height */
-  min-height: 500px; /* Minimum height */
+  min-height: 344px ; /* Minimum height */
   border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
 }
 
