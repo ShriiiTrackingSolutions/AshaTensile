@@ -18,6 +18,13 @@
 
 @media (max-width: 1199.98px) { 
 
+  .navbar-nav {
+    gap: 0;
+}
+
+.nav-link {
+  padding: 8px 0px !important;
+}
  
  }
 
@@ -203,6 +210,13 @@ color: var(--primary);
     font-weight: bold;
     display: block;
   }
+
+  .secH {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
 }
 
 
