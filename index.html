@@ -888,6 +888,18 @@
           dots: true,
           dotsEach: 1,
           items: 1,
+          responsive: {
+        0: {
+          stagePadding: 40, // Stage padding for mobile view
+        },
+        600: {
+          stagePadding: 70, // Stage padding for tablet view
+        },
+        1000: {
+          stagePadding: 100, // Stage padding for desktop view
+        },
+      },
+
         });
 
         // Pause all videos when the slide starts to transition
