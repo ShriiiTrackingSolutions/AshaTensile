@@ -238,6 +238,15 @@ row-gap: 30px;
   margin: auto;
 }
 
+.DroneShoot .owl-stage-outer {
+  padding-bottom: 70px;
+  overflow: visible !important;
+}
+
+.DroneShoot .owl-dots {
+  bottom: 4px;
+}
+
 }
 
  
