@@ -160,6 +160,9 @@ header .container-fluid {
   min-height: 500px;
   object-fit: cover;
 }
+.contactBanner.aboutPage0 img{
+object-position: calc(0% - 100px);
+}
 
 .mainFormSection {
   padding: 35px 15px 35px 15px;

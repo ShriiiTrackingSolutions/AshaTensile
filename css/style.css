@@ -539,7 +539,7 @@ img {
 
 .parallax-row {
   height: 436px;
-  background: url("../image/Torrensville-Parallax.jpg");
+  background: url("../image/HomePageSection1.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -604,6 +604,12 @@ img {
 }
 .hoverCard img {
   transition: all ease 0.3s;
+}
+
+.weatherSolutions .hoverCard img{
+  aspect-ratio: 7/5;
+  object-fit: cover;
+  object-position: center;
 }
 .hoverCard:hover h4 {
   opacity: 1;
@@ -852,7 +858,7 @@ img {
 
 .parallax-row2 {
   height: 436px;
-  background: url("../image/Tumbalong-Green.jpg");
+  background: url("../image/HomePageSection2.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1105,7 +1111,7 @@ address .footerLinks{
 
 .parallax-row3 {
   height: 436px;
-  background: url("../image/Knox-Hero.jpg");
+  background: url("../image/ProductRangeSection.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1139,7 +1145,7 @@ address .footerLinks{
 
 
 .contactBanner img{
-  max-height: 436px;
+  max-height: 550px;
   object-fit: cover;
 }
 
@@ -1518,7 +1524,7 @@ border: none;
 
 .parallax-row4 {
   height: 436px;
-  background: url("../image/About_Image/ParalaxImage4.png");
+  background: url("../image/About_Image/AboutSection.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1575,6 +1581,14 @@ color: var(--primary);
 .parallax-row5 {
   height: 436px;
   background: url("../image/TensileStructure/Macquarie-uni-parallax.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 center;
+}
+.parallax-row6 {
+  height: 436px;
+  background: url("../image/architecturalMembraneSection.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
