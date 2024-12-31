@@ -73,57 +73,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown dropdown-mega position-static">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  data-bs-auto-close="outside"
-                >
-                  Portfolio
-                </a>
-                <div class="dropdown-menu megaDropdown galleryMega shadow">
-                  <div class="mega-content p-md-2">
-                    <div class="container-fluid header">
-                      <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                          <h5 class="megaHeding" onclick="show(1, this);">
-                            Case Studies
-                          </h5>
-                          <div class="list-group group1 d-none">
-                            <a class="imgShow" href=""
-                              ><img
-                                src="image/Mega-Menu-Case-Studies.jpg"
-                                alt=""
-                            /></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                          <h5 class="megaHeding" onclick="show(2, this);">
-                            Project map
-                          </h5>
-                          <div class="list-group group2 d-none">
-                            <a class="imgShow" href=""
-                              ><img src="image/Menu-Projects-Map.jpg" alt=""
-                            /></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                          <h5 class="megaHeding" onclick="show(3, this);">
-                            gallery
-                          </h5>
-                          <div class="list-group group3 d-none">
-                            <a class="imgShow" href=""
-                              ><img src="image/Mega-Menu-Gallery.jpg" alt=""
-                            /></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+           
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
 
               <li class="nav-item">
@@ -978,7 +930,7 @@
           </div>
           <div class="col-md-4 col-sm-6 footer-col">
             <h3 class="fifthH">Our Solutions</h3>
-            <a href="#" class="linkList"
+            <a href="atriumTensileStructure.html" class="linkList"
               ><i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               Modular Tensile Structures</a
             >
@@ -990,15 +942,15 @@
               ><i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               Customized Tensile Structures</a
             >
-            <a href="#" class="linkList"
+            <a href="snailResortTentTensileStructures.html" class="linkList"
               ><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Resort
               Tent Tensile Structures</a
             >
-            <a href="#" class="linkList"
+            <a href="tennisCourtTensileStructure.html" class="linkList"
               ><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Sports
               Tensile Structures
             </a>
-            <a href="#" class="linkList"
+            <a href="swimmingPoolTensileCanopies.html" class="linkList"
               ><i class="fa-solid fa-angle-right" aria-hidden="true"></i>
               Tensile Canopies</a
             >
@@ -1152,34 +1104,7 @@
     }
   }
 
-  // Attach debounced scroll event
-  window.addEventListener("scroll", debounce(handleScroll, 100));
 
-
-      function show(groupNumber, element) {
-        // Hide all groups except the one being toggled
-        if (window.matchMedia("(max-width: 991.98px)").matches) {
-          document.querySelectorAll("[class^='group']").forEach((group) => {
-            if (!group.classList.contains(`group${groupNumber}`)) {
-              group.classList.add("d-none");
-            }
-          });
-
-          // Remove 'active' class from all headings
-          document.querySelectorAll(".megaHeding").forEach((heading) => {
-            heading.classList.remove("active");
-          });
-
-          // Toggle the visibility of the selected group
-          const selectedGroup = document.querySelector(`.group${groupNumber}`);
-          selectedGroup.classList.toggle("d-none");
-
-          // Add 'active' class to the clicked heading if the group is now visible
-          if (!selectedGroup.classList.contains("d-none")) {
-            element.classList.add("active");
-          }
-        }
-      }
     </script>
 
     <script>

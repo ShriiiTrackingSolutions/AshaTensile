@@ -118,6 +118,28 @@ order: 2;
 
 @media (max-width: 767.98px) {
 
+
+  .Banner .item1 {
+    background: url("../image/HomebannerMob1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .Banner .item2 {
+    background: url("../image/HomebannerMob2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Banner .item3 {
+    background: url("../image/HomebannerMob3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
   #accordionFlushExample1 .fourthH{
     font-size: 18px;
   }
