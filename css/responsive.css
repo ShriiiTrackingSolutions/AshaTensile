@@ -139,6 +139,7 @@ order: 2;
     background-size: cover;
   }
   
+ 
 
   #accordionFlushExample1 .fourthH{
     font-size: 18px;
@@ -179,11 +180,13 @@ header .container-fluid {
 
 .contactBanner img{
   max-height: unset;
+}
+
+
+.contactBanner img:not(img[class]) {
+  max-height: unset;
   min-height: 500px;
   object-fit: cover;
-}
-.contactBanner.aboutPage0 img{
-object-position: calc(0% - 100px);
 }
 
 .mainFormSection {
@@ -195,6 +198,19 @@ object-position: calc(0% - 100px);
   font-weight: 400;
 color: var(--primary);
 } 
+
+
+@media only screen and (max-width: 767.98px ) and (max-height: 650px) {
+ .desktopImg{
+  display: block !important;
+ }
+
+ .mobileImg{
+  display: none !important;
+ }
+}
+
+
 
  }
 
