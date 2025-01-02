@@ -686,70 +686,71 @@ img {
   aspect-ratio: 130/98;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
   background-size: cover !important;
 }
 
-.SportsImg {
-  background: url("../image/StadiumSports_200x150-01.png") no-repeat center;
+.StadiumImg {
+  background: url("../image/Stadium.png") no-repeat center;
 }
 
-.imageHoverCard:hover .SportsImg {
-  background: url("../image/StadiumSports_reverse_200x150-01.png") no-repeat
+.imageHoverCard:hover .StadiumImg {
+  background: url("../image/StadiumWhite.png") no-repeat
     center;
 }
 
-.RetailImg {
-  background: url("../image/alt-RetailCommercial_200x150.png") no-repeat center;
+.GazeboImg {
+  background: url("../image/Gazebo.png") no-repeat center;
 }
 
-.imageHoverCard:hover .RetailImg {
-  background: url("../image/white-alt-RetailCommercial_200x150.png") no-repeat
+.imageHoverCard:hover .GazeboImg {
+  background: url("../image/GazeboWhite.png") no-repeat
     center;
 }
-.HospitalityImg {
-  background: url("../image/alt-HospitalityTourism_200x150.png") no-repeat
-    center;
-}
-
-.imageHoverCard:hover .HospitalityImg {
-  background: url("../image/white-alt-HospitalityTourism_200x150.png") no-repeat
+.CenterPoleImg {
+  background: url("../image/CenterPole.png") no-repeat
     center;
 }
 
-.SchoolsImg {
-  background: url("../image/alt-SportsRecreation_200x150.png") no-repeat center;
-}
-
-.imageHoverCard:hover .SchoolsImg {
-  background: url("../image/white-alt-SportsRecreation_200x150.png") no-repeat
+.imageHoverCard:hover .CenterPoleImg {
+  background: url("../image/CenterPoleWhite.png") no-repeat
     center;
 }
 
-.GovernmentImg {
-  background: url("../image/alt-GovernmentCouncil_200x150.png") no-repeat center;
+.FourPoleImg {
+  background: url("../image/FourPole.png") no-repeat center;
 }
 
-.imageHoverCard:hover .GovernmentImg {
-  background: url("../image/white-alt-GovernmentCouncil_200x150.png") no-repeat
+.imageHoverCard:hover .FourPoleImg {
+  background: url("../image/FourPoleWhite.png") no-repeat
     center;
 }
 
-.TransportImg {
-  background: url("../image/alt-TransportInfrastructure_200x150.png") no-repeat
+.ResortTentImg {
+  background: url("../image/ResortTent.png") no-repeat center;
+}
+
+.imageHoverCard:hover .ResortTentImg {
+  background: url("../image/ResortTentWhite.png") no-repeat
     center;
 }
 
-.imageHoverCard:hover .TransportImg {
-  background: url("../image/white-alt-TransportInfrastructure_200x150.png")
+.sidePoleImg {
+  background: url("../image/sidePole.png") no-repeat
+    center;
+}
+
+.imageHoverCard:hover .sidePoleImg {
+  background: url("../image/sidePoleWhite.png")
     no-repeat center;
 }
 
-.MiningImg {
-  background: url("../image/alt-MiningIndustrial_200x150.png") no-repeat center;
+.CarParkingImg {
+  background: url("../image/CarParking.png") no-repeat center;
 }
 
-.imageHoverCard:hover .MiningImg {
-  background: url("../image/white-alt-MiningIndustrial_200x150.png") no-repeat
+.imageHoverCard:hover .CarParkingImg {
+  background: url("../image/CarParkingWhite.png") no-repeat
     center;
 }
 
@@ -1666,4 +1667,51 @@ color: var(--primary);
   max-height: unset; /* Limit table height */
   min-height: unset; /* Minimum height */
   border: 1px solid #ddd; /* Optional: Adds a visible border for clarity */
+}
+
+
+
+
+/**************************
+***Gallery category Page***  
+***************************/
+
+
+
+
+/* gallery categories  */
+.galleryCategories {
+  overflow: hidden;
+}
+
+.grid-item {
+   aspect-ratio: 24/16;
+   object-fit: cover;
+   margin-bottom: 24px;
+  }
+  .grid-item img{
+    aspect-ratio: 24/16;
+    object-fit: cover;
+  }
+
+  .grid-sizer,.grid-item{
+    width: calc(33.333333% - 24px);                                                                              ;
+  }
+
+.gutter-sizer { 
+  width: 24px;
+}
+
+.grid-item--height2 {
+  aspect-ratio: 12/18;
+  object-fit: cover;
+}
+
+.grid-item--height2 img{
+  aspect-ratio: 12/18;
+  object-fit: cover;
+}
+
+.spl-footer{
+  display: none;
 }
