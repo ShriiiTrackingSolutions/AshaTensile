@@ -796,7 +796,7 @@ img {
 }
 
 .rowDirection .imgBg {
-  background: url("../image/why-makmax-home.jpg");
+  background: url("../image/Tensile-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1714,4 +1714,8 @@ color: var(--primary);
 
 .spl-footer{
   display: none;
+}
+
+.blankSpace{
+  height: 88px;
 }

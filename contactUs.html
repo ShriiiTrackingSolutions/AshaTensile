@@ -681,6 +681,52 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+      $(function () {
+        // Define WhatsApp URLs for desktop and mobile
+        const hrefs = [
+          "https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}",
+          "https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}"
+        ];
+    
+        // Handle form submission
+        $("#contactForm").on("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission behavior
+    
+          // Get form input values
+          const name = $("#validationCustom01").val();
+          const email = $("#validationCustomUsername").val();
+          const phone = $("#PhoneNo").val();
+          const subject = $("#validationCustom02").val();
+          const message = $("#validationTextarea").val();
+    
+          // Construct the WhatsApp message
+          let whatsappMessage = `Hello, I have an enquiry:\n\n`;
+          whatsappMessage += `Name: ${name}\n`;
+          whatsappMessage += `Email: ${email}\n`;
+          whatsappMessage += `Phone: ${phone || "Not provided"}\n`;
+          whatsappMessage += `Subject: ${subject}\n`;
+          whatsappMessage += `Message: ${message}`;
+    
+          // Encode the message for the URL
+          const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+          // Replace placeholders in URLs
+          const phoneNumber = "9574720006"; // Replace with your WhatsApp number
+          const desktopUrl = hrefs[0].replace("${phoneNumber}", phoneNumber).replace("${encodedMessage}", encodedMessage);
+          const mobileUrl = hrefs[1].replace("${phoneNumber}", phoneNumber).replace("${encodedMessage}", encodedMessage);
+    
+          // Determine URL based on device width
+          const whatsappUrl = $(window).width() < 767.98 ? mobileUrl : desktopUrl;
+    
+          // Redirect to the appropriate WhatsApp URL
+          window.open(whatsappUrl, "_blank");
+        });
+      });
+    </script>
+
+
     <script>
       $(document).ready(function () {
         var videoSlider = $("#ca2");
