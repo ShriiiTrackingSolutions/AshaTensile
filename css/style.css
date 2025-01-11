@@ -173,6 +173,7 @@ img {
 
 .sticky-header .nav-link {
   color: var(--primary);
+  text-shadow: none;
 }
 .sticky-header .navbar-nav .nav-link.active,
 .sticky-header .navbar-nav .show > .nav-link {
@@ -794,6 +795,15 @@ opacity: 1;
 
 .imageHoverCard:hover .CarParkingImg {
   background: url("../image/CarParkingWhite.png") no-repeat
+    center;
+}
+
+.ModularTensile {
+  background: url("../image/ModernTensile.png") no-repeat center;
+}
+
+.imageHoverCard:hover .ModularTensile {
+  background: url("../image/ModernTensileWhite.png") no-repeat
     center;
 }
 
