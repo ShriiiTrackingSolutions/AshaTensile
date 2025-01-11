@@ -64,9 +64,10 @@
 :root {
   --Black: #333333;
   --textGrey: #707070;
-  --primary: #005baa;
-  --secondary: #408bd1;
+  --primary: #0e0b3f;
+  --secondary: #0e0b3f;
   --HoverBlue: #0a3a89;
+  --seeGreen: #24a0a0;
   --BG-Light: #7eaed4;
   --AccentColour: #e69515;
 }
@@ -124,7 +125,7 @@ img {
 
 .fourthH {
   font-size: 30px;
-  color: #005bab;
+  font-variant: var(--primary);
   line-height: 1.5;
   font-family: Open Sans;
   font-weight: 600;
@@ -155,7 +156,7 @@ img {
 }
 
 .bg-light {
-  background-color: #ffffffaf !important;
+  background-color: #ffffff00 !important;
 }
 
 
@@ -169,6 +170,20 @@ img {
   transition: top 0.5s ease; /* Slide down animation */
   animation: slideDown 0.5s ease-in-out both;
 }
+
+.sticky-header .nav-link {
+  color: var(--primary);
+}
+.sticky-header .navbar-nav .nav-link.active,
+.sticky-header .navbar-nav .show > .nav-link {
+  color: var(--primary);
+}
+
+.sticky-header .navbar-nav .nav-link.active:hover::before,
+.sticky-header .navbar-nav .nav-link:hover::before,.sticky-header .nav-link:focus::before {
+opacity: 0;
+}
+
 @keyframes slideDown {
   0% {
     position: fixed;
@@ -203,6 +218,13 @@ img {
 .navbar-brand {
   margin-right: 45px;
   width: 184px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.navbar-brand img{
+  -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
+  filter: drop-shadow(0px 0px 4px #ffffff);
 }
 
 .dropdown-menu li {
@@ -246,11 +268,12 @@ img {
   color: var(--Black);
 }
 .nav-link {
-  color: var(--Black);
+  color: #ffffff;
   font-size: 16px;
-  padding: 18px 0px !important;
+  padding: 18px 5px !important;
   font-weight: 500;
   line-height: 30px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -259,13 +282,38 @@ img {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
-  color: var(--Black);
+  color: #ffffff;
 }
 
 .navbar-nav .nav-link.active:hover,
 .navbar-nav .show > .nav-link:hover {
   color: var(--primary);
 }
+.navbar-nav .nav-link{
+  position: relative;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  height: 80%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--seeGreen);
+  border-radius: 8px;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active:hover::before,
+.navbar-nav .nav-link:hover::before,.nav-link:focus::before {
+opacity: 1;
+}
+
+
 
 
 .navbar-nav {
@@ -525,13 +573,7 @@ img {
   margin-top: 40px;
   margin-bottom: 16px;
 }
-.Trusted {
-  background: url("../image/Amphiteatre-side.png");
-  background-size: contain;
-  background-size: 230px 185px;
-  background-repeat: no-repeat;
-  background-position: 4px bottom;
-}
+
 .Trusted iframe {
   margin-top: 38px;
   aspect-ratio: 16/9;
@@ -645,6 +687,7 @@ img {
 
 .btnCommon:hover {
   color: #000000;
+  background-color: var(--seeGreen);
 }
 
 /* Weather Solutions section end */
@@ -1030,8 +1073,7 @@ img {
 
 /* footer section start  */
 .Footer{
-  background: url('../image/footer-bg.jpg') center no-repeat;
-  background-size: cover;
+  background-color: #1d1d1d;
   padding-bottom: 20px;
 }
 .Footer.customContainer .container-fluid.custom {
@@ -1093,6 +1135,12 @@ address .footerLinks{
 .linkList:hover {
   padding-left: 20px;
   color: #ffffff;
+}
+
+.copyright {
+  margin-top: 20px !important;
+  padding-top: 36px;
+  border-top: 1px solid var(--textGrey);
 }
 /* footer section end */
 
@@ -1383,7 +1431,7 @@ align-items: center;
 border: none;
 }
 #contactForm button:hover{
-  background-color: var(--secondary);
+  background-color: var(--seeGreen);
 }
 
 #contactForm textarea{
@@ -1427,7 +1475,7 @@ border: none;
   background-color: var(--HoverBlue);
 }
 .buttonSection .btnCommon:hover{
-  background-color: var(--secondary);
+  background-color: var(--seeGreen);
 }
 
 .buttonSection .btnCommon i{
