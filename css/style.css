@@ -185,6 +185,15 @@ img {
 opacity: 0;
 }
 
+.sticky-header.homePage0 .navbar-brand img{
+display: none;
+
+}
+.sticky-header.homePage0 .navbar-brand{
+background: url('../image/ASHA TENSILE.png') no-repeat center;
+background-size: contain;
+}
+
 @keyframes slideDown {
   0% {
     position: fixed;
@@ -219,6 +228,7 @@ opacity: 0;
 .navbar-brand {
   margin-right: 45px;
   width: 184px;
+  height: 80px;
   background-color: #ffffff;
   border-radius: 8px;
 }
@@ -226,6 +236,17 @@ opacity: 0;
 .navbar-brand img{
   -webkit-filter: drop-shadow(0px 0px 4px #ffffff);
   filter: drop-shadow(0px 0px 4px #ffffff);
+}
+.homePage0 .navbar-brand {
+  margin-right: 45px;
+  width: 184px;
+  background-color: #00000000;
+  border-radius: 8px;
+}
+
+.homePage0 .navbar-brand img{
+  -webkit-filter: none;
+  filter: none;
 }
 
 .dropdown-menu li {
@@ -242,6 +263,10 @@ opacity: 0;
   font-weight: 900;
   font-family: "Font Awesome 6 Free";
   border: none;
+}
+
+.navbar-toggler{
+  background-color: #ffffff81;
 }
 
 .navbar {
