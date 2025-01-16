@@ -194,6 +194,8 @@ background: url('../image/ASHA TENSILE.png') no-repeat center;
 background-size: contain;
 }
 
+
+
 @keyframes slideDown {
   0% {
     position: fixed;
