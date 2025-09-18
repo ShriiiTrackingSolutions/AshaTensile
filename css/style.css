@@ -190,7 +190,7 @@ display: none;
 
 }
 .sticky-header.homePage0 .navbar-brand{
-background: url('../image/ASHA TENSILE.png') no-repeat center;
+background: url('../image/ASHA\ TENSILE.png') no-repeat center;
 background-size: contain;
 }
 
@@ -450,20 +450,20 @@ opacity: 1;
   transform: translate(-50%, -50%);
 }
 .Banner .item1 {
-  background: url("../image/BannerImg.png");
+  background: url("../image/BannerImg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Banner .item2 {
-  background: url("../image/Sustainability-of-architectural-fabrics-hero-700x525.jpg");
+  background: url("../image/Sustainability-of-architectural-fabrics-hero-700x525.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .Banner .item3 {
-  background: url("../image/Schools.jpg");
+  background: url("../image/Schools.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -609,7 +609,7 @@ opacity: 1;
 
 .parallax-row {
   height: 436px;
-  background: url("../image/HomePageSection1.png");
+  background: url("../image/HomePageSection1.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -722,7 +722,7 @@ opacity: 1;
 
 /* Shade Structures section start */
 .imgBg {
-  background: url("../image/Bulcock-Beach-Monaco-Sunset.jpg");
+  background: url("../image/Bulcock-Beach-Monaco-Sunset.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -876,7 +876,7 @@ opacity: 1;
 }
 
 .rowDirection .imgBg {
-  background: url("../image/Tensile-home.jpg");
+  background: url("../image/Tensile-home.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -939,7 +939,7 @@ opacity: 1;
 
 .parallax-row2 {
   height: 436px;
-  background: url("../image/HomePageSection2.png");
+  background: url("../image/HomePageSection2.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1061,17 +1061,17 @@ opacity: 1;
 
 }
 .DroneShoot .owl-dot:nth-child(3) span{
-  background: url('../image/Sydney-Football-Stadium-Thumbnail.jpg') center no-repeat;
+  background: url('../image/Sydney-Football-Stadium-Media-Thumbnail.jpg') center no-repeat;
   background-size: cover;
 
 }
 .DroneShoot .owl-dot:nth-child(4) span{
-  background: url('../image/Schools.jpg') center no-repeat;
+  background: url('../image/Schools.webp') center no-repeat;
   background-size: cover;
 
 }
 .DroneShoot .owl-dot:nth-child(5) span{
-  background: url('../image/Torrensville-Parallax.jpg') center no-repeat;
+  background: url('../image/videoThumb5th.webp') center no-repeat;
   background-size: cover;
 
 }
@@ -1197,7 +1197,7 @@ address .footerLinks{
 
 .parallax-row3 {
   height: 436px;
-  background: url("../image/ProductRangeSection.png");
+  background: url("../image/ProductRangeSection.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1610,7 +1610,7 @@ border: none;
 
 .parallax-row4 {
   height: 436px;
-  background: url("../image/About_Image/AboutSection.png");
+  background: url("../image/About_Image/AboutSection.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1659,7 +1659,7 @@ border: none;
 .weatherSolutions.TensilePage0 .fifthH{
   font-size: 26px;
   font-weight: 400;
-color: var(--primary);
+  color: var(--primary);
 } 
 /* Tensile Membrane Structures section end */
 
@@ -1674,7 +1674,7 @@ color: var(--primary);
 }
 .parallax-row6 {
   height: 436px;
-  background: url("../image/architecturalMembraneSection.png");
+  background: url("../image/architecturalMembraneSection.webp");
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1803,4 +1803,5 @@ color: var(--primary);
 
 .blankSpace{
   height: 88px;
+  background-color: var(--HoverBlue);
 }

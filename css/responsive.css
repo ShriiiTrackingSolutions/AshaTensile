@@ -78,7 +78,7 @@
     padding-bottom: 10px;
 }
 
-.parallax-row,.parallax-row2,.parallax-row3,.parallax-row4,.parallax-row5 {
+.parallax-row,.parallax-row2,.parallax-row3,.parallax-row4,.parallax-row5,.parallax-row6 {
   height: auto;
   background: none;
 }
@@ -120,20 +120,20 @@ order: 2;
 
 
   .Banner .item1 {
-    background: url("../image/HomebannerMob1.png");
+    background: url("../image/HomebannerMob1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .Banner .item2 {
-    background: url("../image/HomebannerMob2.png");
+    background: url("../image/HomebannerMob2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .Banner .item3 {
-    background: url("../image/HomebannerMob3.png");
+    background: url("../image/HomebannerMob3.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

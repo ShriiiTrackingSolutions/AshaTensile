@@ -22,19 +22,15 @@
 
     <link fetchpriority="high" rel="preload" href="image/White_ASHA TENSILE.png" as="image" type="image/png" />
     <link fetchpriority="high" rel="preload" href="image/ASHA TENSILE.png" as="image" type="image/png" />
-    <link fetchpriority="high" rel="preload" href="image/architecturalMembraneBanner.png" as="image" type="image/png" />
-    <link fetchpriority="high" rel="preload" href="image/architecturalMembraneIntroductionMob.jpg" as="image" type="image/png" />
+    <link fetchpriority="high" rel="preload" href="image/architecturalMembraneBanner.webp" as="image" type="image/webp" />
+    <link fetchpriority="high" rel="preload" href="image/architecturalMembraneIntroductionMob.webp" as="image" type="image/webp" />
 
     <!-- Preload -->
     <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <link rel="preload" as="style" href="css/style.css" />
     <link rel="preload" as="style" href="css/responsive.css" />
-    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/spotlight.css">
@@ -113,8 +109,8 @@
 
     <!-- banner start -->
     <section id="headBelowContent" class="contactBanner architecturalMembranePage0">
-      <img class="desktopImg d-none d-md-block" src="image/architecturalMembraneBanner.png" alt="tensile structures">  
-      <img class=" mobileImg d-block d-md-none" src="image/architecturalMembraneIntroductionMob.jpg" alt="tensile structures">  
+      <img class="desktopImg d-none d-md-block" src="image/architecturalMembraneBanner.webp" alt="tensile structures">  
+      <img class=" mobileImg d-block d-md-none" src="image/architecturalMembraneIntroductionMob.webp" alt="tensile structures">  
     </section>
 
     
@@ -147,11 +143,11 @@
           </li>
         </ol>
 
-        <div class="row">
+        <div class="row g-4">
           <div class="col-lg-4">
             <a href="PVC_Coated_Fabric.html"
               ><img
-                src="image/PVC_Fabric.jpg"
+                src="image/PVC_Fabric.webp"
                 alt="Products pic"
             /></a>
             <h3 class="fifthH"><a href="PVC_Coated_Fabric.html">PVC Fabric</a></h3>
@@ -168,7 +164,7 @@
           <div class="col-lg-4">
             <a href="ETFE_FOIL.html"
               ><img
-                src="image/ETFE_Foil.jpg"
+                src="image/ETFE_Foil.webp"
                 alt="Products pic"
             /></a>
             <h3 class="fifthH"><a href="ETFE_FOIL.html">ETFE Foil</a></h3>
@@ -190,7 +186,7 @@
           <div class="col-lg-4">
             <a href="HDPE_Fabric.html"
               ><img
-                src="image/HDPE_Fabric.jpg"
+                src="image/HDPE_Fabric.webp"
                 alt="Products pic"
             /></a>
             <h3 class="fifthH"><a href="HDPE_Fabric.html">HDPE Fabric</a></h3>
@@ -412,7 +408,7 @@
     <section class="parallax-row6">
       <img
         class="d-lg-none d-block"
-        src="image/architecturalMembraneSection.png"
+        src="image/architecturalMembraneSection.webp"
         alt="parallax image"
       />
     </section>
@@ -666,7 +662,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 
     <script> //Table Js
@@ -686,61 +681,7 @@
       });
     </script>
 
-    <script>
-      $(document).ready(function () {
-        var videoSlider = $("#ca2");
 
-        // Add enablejsapi=1 to all iframe URLs
-        $(".owl-item .item iframe").each(function () {
-          var iframe = $(this);
-          var src = iframe.attr("src");
-
-          // Check if enablejsapi=1 is already present
-          if (src && src.indexOf("enablejsapi=1") === -1) {
-            var newSrc =
-              src.indexOf("?") === -1
-                ? src + "?enablejsapi=1"
-                : src + "&enablejsapi=1";
-            iframe.attr("src", newSrc);
-          }
-        });
-
-        // Initialize Owl Carousel
-        videoSlider.owlCarousel({
-          loop: true,
-          stagePadding: 100,
-          margin: 10,
-          nav: true,
-          dots: true,
-          dotsEach: 1,
-          items: 1,
-        });
-
-        // Pause all videos when the slide starts to transition
-        videoSlider.on("translate.owl.carousel", function () {
-          $(".owl-item .item iframe").each(function () {
-            // Pause YouTube iframe by sending a 'pause' message
-            var iframe = $(this);
-            iframe[0].contentWindow.postMessage(
-              '{"event":"command","func":"pauseVideo","args":""}',
-              "*"
-            );
-          });
-        });
-
-        // Play the video in the active slide after the transition is complete
-        videoSlider.on("translated.owl.carousel", function () {
-          var activeIframe = $(".owl-item.active .item iframe");
-          if (activeIframe.length) {
-            // Play YouTube iframe by sending a 'play' message
-            activeIframe[0].contentWindow.postMessage(
-              '{"event":"command","func":"playVideo","args":""}',
-              "*"
-            );
-          }
-        });
-      });
-    </script>
     <script>
       // Header Script 
       // Debounce function to limit how often the event handler executes
